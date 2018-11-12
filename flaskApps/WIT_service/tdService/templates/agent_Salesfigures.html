@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+  <h1>Agent Leaderboard</h1>
+</head>
+
+<body>
+  <p>This data will be pulled from perx Db</p>
+  <p>This page could also have a split screen to show any agent incentives, should there be any at the time</p>
+</body>
+
+<form action="/forex_rates" method="GET">
+  <input type="submit" name="" value="Exchange Rates">
+</form>
+<form action="/agent_call" method="GET">
+  <input type="submit" name="" value="Agent Call Stats">
+</form>
+<form action="/sales_deals" method="GET">
+  <input type="submit" name="" value="Sale Deals">
+</form>
+{% endblock %}

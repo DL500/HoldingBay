@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+
+<head>
+  <h1>Special Deals of the week or month</h1>
+</head>
+
+<body>
+  <p>This would be a page that would be manualy managed</p>
+  <p>Agents would use this page for Information to pass on to there caller/client</p>
+</body>
+
+<form action="/forex_rates" method="GET">
+  <input type="submit" name="" value="Exchange Rates">
+</form>
+<form action="/agent_call" method="GET">
+  <input type="submit" name="" value="Agent Call Stats">
+</form>
+<form action="/agent_Salesfig" method="GET">
+  <input type="submit" name="" value="Agent Sales Figures">
+</form>
+
+{% endblock %}

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+
+    <style media="screen">
+    img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    </style>
+    <img src="/static/Touchdown_new.png" alt="Touchdown Logo" style="width:600px;height:300;">
+
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>WITv1</title>
+    {% endif %}
+    <style media="screen">
+       body {font-size: 15; font-family: sans-serif}
+    </style>
+  </head>
+  <body>
+
+    {% block content %}
+    {% endblock %}
+  </body>
+</html>

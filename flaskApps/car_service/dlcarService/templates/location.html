@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+
+<h1>This are our pickup locations.</h1>
+
+{% for rowResult in resultLocation %}
+<table>
+  <tr>
+    <td>{{ rowResult[1] }}</td><td>{{ rowResult[2] }}</td>
+  </tr>
+</table>
+{% endfor %}
+{% endblock %}

@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+{% block content %}
+
+    <h1>This will give details of existing reservations</h1>
+    <h2>Now using a base.html to format all webpages from with css</h2>
+
+    {% for rowResult in myResult %}
+    <table>
+      <tr>
+        <td>{{ rowResult[2] }}</td>
+        <td>{{ rowResult[4].strftime("%b %d, %Y") }}</td>
+      </tr>
+    </table>
+
+    {% endfor %}
+
+{% endblock %}

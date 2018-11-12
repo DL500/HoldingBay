@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+
+    {% if title %}
+    <title>{{ title }}</title>
+    {% else %}
+    <title>Travelbrands Car Service</title>
+    {% endif %}
+
+    <style media="screen">
+      body {font-size: 19px; font-family: Verdana}
+    </style>
+  </head>
+  <body>
+
+    {% block content %}
+    {% endblock %}
+
+  </body>
+</html>
